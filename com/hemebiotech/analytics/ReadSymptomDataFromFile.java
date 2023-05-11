@@ -6,38 +6,35 @@ import java.io.IOException;
 import java.util.TreeMap;
 import java.util.Map;
 
-/**
- * Simple brute force implementation
- *
- */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
     private String filepath;
 
-    /**
-     *
-     * @param filepath a full or partial path to file with symptom strings in it, one per line
-     */
+    /*ReadSymptomDataFromFile:
+    * Constructor
+    * @param filepath a full or partial path to file with symptom strings in it, one per line
+    */
     public ReadSymptomDataFromFile (String filepath) {
         this.filepath = filepath;
     }
 
-    @Override
-    public Map (String,Integer) GetSymptoms() {
+    /*getSymptoms:
+    * Returns a map <String,Integer> such that to each key String being a symptom,
+    * is associated an Integer value being the number of occurrences, of the associated symptom,
+    * in the filepath file of the ReadSymptomDataFromFile on which the method is called.
+    */
+    public Map <String,Integer> getSymptoms() {
         Map<String,Integer> result = new TreeMap<String,Integer>();
 
-        if (filepath != null) {
+        if (this.filepath != null) {
             try {
-                BufferedReader reader = new BufferedReader (new FileReader(filepath));
+                BufferedReader reader = new BufferedReader (new FileReader(this.filepath));
                 String line = reader.readLine();
 
                 while (line != null) {
-                    if(result.containsKey(Line)){
-                        int count = result.get(Line);
-                        result.put(Line,count+1);
-                    }else{
-                        result.put(Line,1);
-                    }
+                    result.putIfAbsent(line,0);
+                    int count = result.get(line)+1;
+                    result.replace(line,count);
                     line = reader.readLine();
                 }
                 reader.close();
