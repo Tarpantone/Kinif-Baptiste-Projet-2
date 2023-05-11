@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93574b11-408e-4a59-9def-ff1993d8f072" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Kinif-Baptiste-Projet-2.git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kinif-Baptiste-Projet-2.git.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/hemebiotech/analytics/AnalyticsCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/com/hemebiotech/analytics/AnalyticsCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/hemebiotech/analytics/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/hemebiotech/analytics/AnalyticsCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/hemebiotech/analytics/ISymptomReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/hemebiotech/analytics/ISymptomReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/hemebiotech/analytics/ISymptomWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/hemebiotech/analytics/ISymptomWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/hemebiotech/analytics/WriteSymptomDataToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/hemebiotech/analytics/WriteSymptomDataToFile.java" afterDir="false" />
-    </list>
+    <list default="true" id="93574b11-408e-4a59-9def-ff1993d8f072" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
