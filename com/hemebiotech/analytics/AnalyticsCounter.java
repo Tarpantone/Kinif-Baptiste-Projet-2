@@ -5,6 +5,10 @@ public class AnalyticsCounter {
     ISymptomReader readFile;
     ISymptomWriter writtenFile;
 
+    /*AnalyticsCounter:
+     *Constructor:
+     *@param r an implemented ISymptomReader and w an implemented ISymptomWriter
+     */
     public AnalyticsCounter(ISymptomReader r, ISymptomWriter w) {
         this.readFile = r;
         this.writtenFile = w;
