@@ -11,7 +11,7 @@ public class AnalyticsCounter {
     }
 
     /*run:
-    * Main method.
+    *@see ReadSymptomDataFromFile and WriteSymptomDataToFile
     */
     public static void run(String read, String write) {
         ISymptomReader readFile = new ReadSymptomDataFromFile(read);
@@ -20,7 +20,6 @@ public class AnalyticsCounter {
         Map<String, Integer> symptoms = analyticsCounter.readFile.getSymptoms();
         analyticsCounter.writtenFile.writeSymptoms(symptoms);
     }
-
     public static void main(String io[]) throws Exception {
 
         run("symptoms.txt", "result.out");

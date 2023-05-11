@@ -19,7 +19,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
     }
 
     /*getSymptoms:
-    * Returns a map <String,Integer> such that to each key String being a symptom,
+    * @return result:Map<String,Integer> such that to each key String being a symptom,
     * is associated an Integer value being the number of occurrences, of the associated symptom,
     * in the filepath file of the ReadSymptomDataFromFile on which the method is called.
     */
@@ -42,7 +42,6 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
                 e.printStackTrace();
             }
         }
-
         return result;
     }
 
